@@ -7,17 +7,15 @@ import {ProdsRoutingModule} from './prods-routing.module';
 import {BrowserModule} from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
 import {NgxsModule} from '@ngxs/store';
-import {AppState} from './store/root.state';
-import {environment} from '../../environments/environment';
 import {NgxsReduxDevtoolsPluginModule} from '@ngxs/devtools-plugin';
-import {AppData} from './app-data';
-import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { productsState} from './store/features';
+import {NgxsStoragePluginModule} from '@ngxs/storage-plugin';
 
 @NgModule({
   imports: [
     HttpClientModule,
-    NgxsReduxDevtoolsPluginModule.forRoot(),
     ProdsRoutingModule,
+    NgxsModule.forFeature(productsState),
   ],
   declarations: [
       WelcomeComponent,

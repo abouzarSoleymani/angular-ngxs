@@ -10,6 +10,7 @@ import {RouterModule} from '@angular/router';
 import {PipesModule} from '../shared/pipes';
 import {FormComponent} from './form/form.component';
 import {ListComponent} from './list/list.component';
+import {NgxsStoragePluginModule} from '@ngxs/storage-plugin';
 
 @NgModule({
   imports: [
@@ -18,7 +19,9 @@ import {ListComponent} from './list/list.component';
     ReactiveFormsModule,
     RouterModule,
     TodosRoutingModule,
-
+    // NgxsStoragePluginModule.forRoot({
+    //   key: 'todos',
+    // }),
     NgxsModule.forFeature(TodoStates),
   ],
   declarations: [

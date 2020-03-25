@@ -19,7 +19,7 @@ export interface ProductStateModel {
 }
 
 @State<ProductStateModel>({
-    name: 'product',
+    name: 'products',
     defaults: {
         products: [],
         categories: [],

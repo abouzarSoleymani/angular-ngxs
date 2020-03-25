@@ -25,7 +25,8 @@ import {CommonModule} from '@angular/common';
         component: ProductShellComponent
       }
     ]),
-    NgxsModule.forFeature([ProductState])
+    NgxsModule.forFeature([ProductState]),
+
   ],
   declarations: [
     ProductListComponent,
