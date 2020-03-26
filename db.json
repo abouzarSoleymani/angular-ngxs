@@ -1,0 +1,70 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Red Apple",
+      "price": 0.4,
+      "emoji": "🍎"
+    },
+    {
+      "id": 2,
+      "name": "Grapes",
+      "price": 0.9,
+      "emoji": "🍇"
+    },
+    {
+      "id": 3,
+      "name": "Tangerine",
+      "price": 0.6,
+      "emoji": "🍊"
+    },
+    {
+      "id": 4,
+      "name": "Watermelon",
+      "price": 1.5,
+      "emoji": "🍉"
+    },
+    {
+      "id": 5,
+      "name": "Eggplant",
+      "price": 1.25,
+      "emoji": "🍆"
+    },
+    {
+      "name": "Pineapple",
+      "price": 3,
+      "emoji": "🍍",
+      "id": 6
+    },
+    {
+      "name": "Green apple",
+      "price": 0.35,
+      "emoji": "🍏",
+      "id": 7
+    },
+    {
+      "name": "Sushi",
+      "price": 5.5,
+      "emoji": "🍣",
+      "id": 8
+    },
+    {
+      "name": "Apple",
+      "price": 1,
+      "emoji": "🍎",
+      "id": 9
+    },
+    {
+      "name": "dfdgdgdfg",
+      "price": 20,
+      "emoji": "🍕",
+      "id": 10
+    },
+    {
+      "name": "yyiyuiuy",
+      "price": 30,
+      "emoji": "🍞",
+      "id": 11
+    }
+  ]
+}

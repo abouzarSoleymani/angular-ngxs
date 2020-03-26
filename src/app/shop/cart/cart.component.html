@@ -1,0 +1,34 @@
+<div class="list-group cart-list">
+  <div *ngFor="let item of (cart$ | async)" class="list-group-item cart-item ">
+    <div class="row">
+      <div class="col-1">
+        {{item.quantity}} x
+      </div>
+      <div class="col-8">
+        {{item.emoji}} {{item.name}}
+      </div>
+      <div class="col-2 text-right">
+        {{(item.quantity * item.price) | currency }}
+      </div>
+      <div class="col-1 text-right">
+        <i (click)="onDelete(item)" class="fa fa-trash-o"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="list-group total-price">
+  <div class="list-group-item ">
+    <div class="row">
+      <div class="col-9">
+        <b>Total Price</b>
+      </div>
+      <div class="col-2 text-right">
+        {{total$ | async | currency }}
+      </div>
+      <div class="col-1">
+
+      </div>
+    </div>
+  </div>
+</div>

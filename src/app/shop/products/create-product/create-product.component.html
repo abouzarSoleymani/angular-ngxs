@@ -1,0 +1,29 @@
+<div class="modal-header">
+  <h4 class="modal-title">Create a new product</h4>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form [formGroup]="form">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" formControlName="name">
+    </div>
+    <div class="form-group">
+      <label for="price">Price $</label>
+      <input type="number" class="form-control" id="price" formControlName="price">
+    </div>
+    <div class="form-group">
+      <label for="emoji">Emoji</label>
+      <select type="select" class="form-control" id="emoji" formControlName="emoji">
+          <option >Choose an emoji :)</option>
+          <option *ngFor="let emoji of emojis">{{emoji}}</option>
+      </select>
+    </div>
+  </form>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+  <button type="button" class="btn btn-outline-primary" (click)="onSave()">Save</button>
+</div>

@@ -62,7 +62,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngxs-crud-app:build"
+            "browserTarget": "ngxs-crud-app:build",
+            "proxyConfig": "proxy.conf.json"
           },
           "configurations": {
             "production": {

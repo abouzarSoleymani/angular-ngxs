@@ -1,0 +1,19 @@
+.emoji {
+  font-size: 50px;
+  margin-top: -5px;
+}
+
+.product-list {
+  display: grid;
+  /* autoprefixer: off */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+h5 {
+  cursor: pointer;
+}
+
+.new-product {
+  margin-bottom: 20px;
+}

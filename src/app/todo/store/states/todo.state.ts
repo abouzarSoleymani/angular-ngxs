@@ -45,6 +45,7 @@ export class TodoState {
     @Action(AddTodo)
     addTodo({getState, patchState}: StateContext<TodoStateModel>, {payload}: AddTodo) {
         return this.todoService.addTodo(payload).pipe(tap((result) => {
+            console.log('result: ', result)
             const state = getState();
             patchState({
                 todos: [...state.todos, result]

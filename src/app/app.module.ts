@@ -37,7 +37,7 @@ import {AppData} from './prods/app-data';
             developmentMode: !environment.production,
         }),
         NgxsStoragePluginModule.forRoot({
-            key: ['auth.status', 'books', 'todos', 'products'],
+            key: ['auth.status', 'books', 'todos', 'products', 'cart', 'productState'],
         }),
         NgxsRouterPluginModule.forRoot(),
         NgxsReduxDevtoolsPluginModule.forRoot({
@@ -46,7 +46,7 @@ import {AppData} from './prods/app-data';
         NgxsLoggerPluginModule.forRoot({
             disabled: environment.production,
         }),
-        InMemoryWebApiModule.forRoot(AppData, { delay: 1000 }),  //products
+      //  InMemoryWebApiModule.forRoot(AppData, { delay: 1000 }),  //products
         CoreModule.forRoot(),
     ],
     providers: [

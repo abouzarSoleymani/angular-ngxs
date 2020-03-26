@@ -11,6 +11,7 @@ const routes: Routes = [
   },
   {path: 'todo', loadChildren: () => import('./todo/todos.module').then(m => m.TodosModule)},
   {path: 'prods', loadChildren: () => import('./prods/prods.module').then(m => m.ProdsModule)},
+  {path: 'shop', loadChildren: () => import('./shop/shop.module').then(m => m.ShopModule)},
   // { path: '**', component: NotFoundPageComponent },
 ];
 

@@ -1,0 +1,8 @@
+<div *ngIf="(product$ | async) as product" class="card product">
+  <div class="card-body">
+    <div class="emoji float-right">{{ product.emoji }}</div>
+    <h5 class="card-title">{{product.name}}</h5>
+    <p class="card-text">{{product.price | currency }}</p>
+    <button type="button" (click)="onAddToCart(product.id)" class="btn btn-outline-primary">Add to cart</button>
+  </div>
+</div>
